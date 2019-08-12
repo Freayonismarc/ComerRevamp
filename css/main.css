@@ -2615,7 +2615,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .faq-area {
-  background: url(../img/fact.jpg) center;
+  background: url(../img/b2.jpg) center;
   background-size: cover;
 }
 
@@ -2654,13 +2654,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .circle {
-  border: 1px solid #bd0f0f;
+  border: 1px solid #e28d0c;
   border-radius: 68px;
   display: inline-block;
 }
 
 .inner {
   background-color: #bd0f0f;
+  background: url(../img/gears-icon.png) center;
   border-radius: 50px;
   margin: 24px;
   height: 90px;
@@ -2835,6 +2836,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer-area {
   padding-top: 100px;
   background-color: #04091e;
+  background: url(../img/footer-bg.jpg) center;
 }
 
 .footer-area h6 {
