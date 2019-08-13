@@ -782,7 +782,7 @@ td, th {
 }
 
 b, sup, sub, u, del {
-  color: rgb(192, 154, 27);
+  color: rgb(212, 167, 19);
 }
 
 h1 {
@@ -1876,8 +1876,8 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 .header-top {
-  font-size: 12px;
-  padding: 8px;
+  font-size: 15px;
+  padding: 11px;
   background-color: #bd0f0f;
 }
 
