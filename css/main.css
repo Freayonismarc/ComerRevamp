@@ -2329,7 +2329,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-  background: url(../img/header-bg.jpg) center;
+  background: url(../img/headerbg-2.jpg) center;
+  background-size: cover;
+}
+.banner-area2 {
+  background: url(../img/contactbg.jpg) center;
   background-size: cover;
 }
 
@@ -2986,7 +2990,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-text a, .footer-text i {
-  color: #bd0f0f;
+  color: rgb(212, 167, 19);
 }
 
 .whole-wrap {
