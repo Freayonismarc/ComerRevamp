@@ -2072,9 +2072,14 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   color: #222;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
   outline: none;
+}
+
+.nav-menu li:hover > a {
+  background-color: #bd0f0f;
+  color: #fff;
 }
 
 .nav-menu > li {
@@ -2097,12 +2102,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
   transition: 0.3s;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: none;
 }
 
 .nav-menu ul li:hover > a {
-  color: #bd0f0f;
+  color: #fff;
 }
 
 .nav-menu ul ul {
@@ -2131,7 +2136,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav-toggle i {
-  color: #222;
+  color: #bd0f0f;
   font-weight: 900;
 }
 
@@ -2151,7 +2156,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(235, 219, 151, 0.8);
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -2183,7 +2188,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul li a:hover {
-  color: #fff;
+  color: #bd0f0f;
 }
 
 #mobile-nav ul li li {
@@ -2196,7 +2201,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   padding: 15px;
   cursor: pointer;
-  color: #fff;
+  color: #bd0f0f;
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
