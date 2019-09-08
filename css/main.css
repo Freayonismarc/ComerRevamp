@@ -2158,7 +2158,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(235, 219, 151, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   left: -260px;
   width: 260px;
   overflow-y: auto;
