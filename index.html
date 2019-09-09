@@ -67,7 +67,7 @@
 							<li><a href="9_products-metal panel form.html">Metal Panel</a></li>
 							<li><a href="10_products-phenolic panels.html">Phenolic Panel</a></li>
 							<li><a href="11_products-form tie system.html">Form Tie System</a></li>
-							<li><a href="12_products-circular column road side panel.html">Circulat Column Road Side Panel</a></li>
+							<li><a href="12_products-circular column road side panel.html">Circular Column Road Side Panel</a></li>
 							<li><a href="13_products-climbing formworks.html">Climbing Formworks</a></li>
 							<li><a href="14_products-power climber gondola.html">Power Climber Gondola</a></li>
 							<li><a href="15_products-pvc products.html">PVC Products</a></li>
@@ -76,7 +76,7 @@
 						</ul>	          
 						</li>
 						<li><a href="contact.html">Contact</a></li>
-						<li><input type="text" placeholder="Search"> <i class="fa fa-search"></i></li>
+						<li><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search"> <i class="fa fa-search"></i></li>
 					</ul>
 					</nav><!-- #nav-menu-container -->		    		
 				</div>
@@ -115,36 +115,33 @@
 						<div class="col-lg-4">
 							<div class="single-service">
 								<div class="thumb">
-								<a href="img/s1.jpg" class="img-gal">
-									<img src="img/s1.jpg" alt=""></a>									
+									<img src="img/s1.jpg" alt="">									
 								</div>
 								<h4>PHENOLIC BOARDS</h4>
 								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+									With the vision of being the leading supplier of building materials, we commit maximum efforts to ensure that orders arrive at customer's premises without any delay.
 								</p>
 							</div>
 						</div>
 						<div class="col-lg-4">
 							<div class="single-service">
 								<div class="thumb">
-								<a href="img/s2.jpg" class="img-gal">
-									<img src="img/s2.jpg" alt=""></a>									
+									<img src="img/s2.jpg" alt="">									
 								</div>
 								<h4>SCAFFOLDING PIPES</h4>
 								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+									With the vision of being the leading supplier of building materials, we commit maximum efforts to ensure that orders arrive at customer's premises without any delay
 								</p>
 							</div>
 						</div>
 						<div class="col-lg-4">
 							<div class="single-service">
 								<div class="thumb">
-								<a href="img/s3.jpg" class="img-gal">
-									<img src="img/s3.jpg" alt=""></a>									
+									<img src="img/s3.jpg" alt="">									
 								</div>
 								<h4>PVC Underground Pipe & Spacer</h4>
 								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+									With the vision of being the leading supplier of building materials, we commit maximum efforts to ensure that orders arrive at customer's premises without any delay
 								</p>
 							</div>
 						</div>												
@@ -233,7 +230,7 @@
 								<h6><img src="img/INTERESTED.png" alt="Interested?"></h6>
 								<p><a href="about.html"><img src="img/CTA_quotation.png"></a></p>
 								<p href=""><img src="img/CTA_partnership.png"></p>
-								<p href=""><img src="img/CTA_catalogueDL.png"></p>								
+								<a href="Catalogue.pdf" download="Catalogue"><img src="img/CTA_catalogueDL.png"></a>							
 							</div>
 						</div>
 						<div class="col-lg-5  col-md-6 col-sm-6">
@@ -288,7 +285,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Comer
 			<script src="js/jquery.counterup.min.js"></script>
 			<script src="js/waypoints.min.js"></script>							
 			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
+			<script src="js/main.js"></script>
+			<script>
+				function myFunction() {
+					var input, filter, ul, li, a, i, txtValue;
+					input = document.getElementById("myInput");
+					filter = input.value.toUpperCase();
+					ul = document.getElementById("menu-has-children");
+					li = ul.getElementsByTagName("li");
+					for (i = 0; i < li.length; i++) {
+						a = li[i].getElementsByTagName("a")[0];
+						txtValue = a.textContent || a.innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							li[i].style.display = "";
+						} else {
+							li[i].style.display = "none";
+						}
+					}
+				}
+				</script>
 		</body>
 	</html>
 
