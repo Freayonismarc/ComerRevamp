@@ -782,7 +782,7 @@ td, th {
 }
 
 b, sup, sub, u, del {
-  color: #d4af37;
+  color: rgb(212, 167, 19);
 }
 
 h1 {
@@ -2700,10 +2700,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #000;
   opacity: .5;
 }
-.overlay-bg1 {
-  background-color: #000;
-  opacity: .5;
-}
 
 .feedback-left {
   background: url(../img/video-bg.jpg) center;
@@ -3002,7 +2998,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-text a, .footer-text i {
-  color: #d4af37;
+  color: rgb(212, 167, 19);
 }
 
 .whole-wrap {
