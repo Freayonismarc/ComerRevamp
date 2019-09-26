@@ -51,7 +51,8 @@
 					<a href="index.html"><img src="img/COMER.png" alt="" title="" /></a>
 					</div>
 					<nav id="nav-menu-container">
-					<ul class="nav-menu">
+					<ul class="nav-menu" id="myMenu">
+						<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"> <i class="fa fa-search"></i>
 						<li class="menu-active"><a href="index.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
 						<li class="menu-has-children"><a href="#">Products</a>
@@ -76,7 +77,6 @@
 						</ul>	          
 						</li>
 						<li><a href="contact.html">Contact</a></li>
-						<li><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search"> <i class="fa fa-search"></i></li>
 					</ul>
 					</nav><!-- #nav-menu-container -->		    		
 				</div>
@@ -233,7 +233,7 @@
 								<a href="Catalogue.pdf" download="Catalogue"><img src="img/CTA_catalogueDL.png"></a>							
 							</div>
 						</div>
-						<div class="col-lg-5  col-md-6 col-sm-6">
+						<div class="col-lg-5 col-md-6 col-sm-6">
 							<div class="single-footer-widget">
 								<b class="glyphicon glyphicon-earphone"></b><h6>Landline</h6>
 								<p><font color="#fff">(632) 294-0392<br>
@@ -242,10 +242,10 @@
 									(632) 921-9303</font></p>
 									<br>
 								<h6>Mobile No.</h6>
-								<p><font color="#fff">Globe: (+63) 917 581 8181 (Viber ready)<br>
-									Globe: (+63) 917 532 1236 (Viber ready)<br>
-									Sun: (+63) 922 813 3119<br>
-									Smart: (+63) 920 967 1300</font></p>
+								<p><font color="#fff">Globe:<br>(+63) 917 581 8181 (Viber ready)<br>
+									Globe:<br>(+63) 917 532 1236 (Viber ready)<br>
+									Sun:<br>(+63) 922 813 3119<br>
+									Smart:<br>(+63) 920 967 1300</font></p>
 							</div>
 						</div>						
 						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
@@ -261,7 +261,7 @@
 						</div>						
 					</div>
 				</div>
-				<br><br>
+				<br>
 				<p class="footer-text" align="center" style="color:#fff">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> Comer Industrial Development Inc. All Rights Reserved.<br> Website by: <b><a href="http://dreamdevcreatives.000webhostapp.com/index.html">Dream Dev Creatives</a></b>
@@ -286,24 +286,66 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Comer
 			<script src="js/waypoints.min.js"></script>							
 			<script src="js/mail-script.js"></script>	
 			<script src="js/main.js"></script>
+			<script type="text/javascript">
+				var TRange=null;
+				
+
+				function findString () {
+				//if (parseInt(navigator.appVersion)<4) return;
+				var cStrFound = document.getElementById("strFound").value;
+				//var cStrFound = "bobo ni jace in variable"
+				// alert(cStrFound);
+
+				if (window.find) {
+				// alert("bobo si jace");
+				// CODE FOR BROWSERS THAT SUPPORT window.find
+
+				// strFound=self.find(str);
+				if (!cStrFound) {
+				// cStrFound=self.find(cStrFound,0,1);
+				while (self.find(cStrFound,0,1)) continue;
+				}
+				}
+				else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+				// EXPLORER-SPECIFIC CODE
+
+				if (TRange!=null) {
+				TRange.collapse(false);
+				cStrFound=TRange.findText(str);
+				if (cStrFound) TRange.select();
+				}
+				if (TRange==null || cStrFound==0) {
+				TRange=self.document.body.createTextRange();
+				cStrFound=TRange.findText(str);
+				if (cStrFound) TRange.select();
+				}
+				}
+				else if (navigator.appName=="Opera") {
+				alert ("Opera browsers not supported, sorry...")
+				return;
+				}
+				if (!cStrFound) alert ("String '"+cStrFound+"' not found!")
+				return;
+				}
+			</script>
 			<script>
 				function myFunction() {
-					var input, filter, ul, li, a, i, txtValue;
-					input = document.getElementById("myInput");
+					var input, filter, ul, li, a, i;
+					input = document.getElementById("mySearch");
 					filter = input.value.toUpperCase();
-					ul = document.getElementById("menu-has-children");
+					ul = document.getElementById("myMenu");
 					li = ul.getElementsByTagName("li");
 					for (i = 0; i < li.length; i++) {
-						a = li[i].getElementsByTagName("a")[0];
-						txtValue = a.textContent || a.innerText;
-						if (txtValue.toUpperCase().indexOf(filter) > -1) {
-							li[i].style.display = "";
-						} else {
-							li[i].style.display = "none";
-						}
+					a = li[i].getElementsByTagName("a")[0];
+					if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+						li[i].style.display = "";
+					} else {
+						li[i].style.display = "none";
+					}
 					}
 				}
-				</script>
+			</script>
 		</body>
 	</html>
 
