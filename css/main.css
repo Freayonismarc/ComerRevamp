@@ -103,6 +103,12 @@ a, a:focus, a:hover {
   padding: 60px;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
 /**
  *  Typography
  *
@@ -2135,6 +2141,11 @@ h1, h2, h3, h4, h5, h6 {
   #mobile-nav-toggle {
     top: 22px;
   }
+  .banner-area{
+    height: 65vh;
+    width: auto;
+    max-width: 100%;
+  }
 }
 
 #mobile-nav-toggle i {
@@ -2148,6 +2159,19 @@ h1, h2, h3, h4, h5, h6 {
   }
   #nav-menu-container {
     display: none;
+  }
+  .banner-area{
+    height: 65vh;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 980px){
+  .banner-area{
+    height: 65vh;
+    width: auto;
+    max-width: 100%;
   }
 }
 
