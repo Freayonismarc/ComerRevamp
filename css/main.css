@@ -2888,7 +2888,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .copy-right-text i, .copy-right-text a {
-  color: #bd0f0f;
+  color: #FFFFFF;
 }
 
 .footer-social a {
@@ -2900,7 +2900,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-social a:hover i {
-  color: #bd0f0f;
+  color: #FFFFFF;
 }
 
 .footer-social i {
@@ -2934,7 +2934,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-footer-widget .bb-btn {
-  color: #bd0f0f;
+  color: #FFFFFF;
   color: #FFFFFF;
   font-weight: 300;
   border-radius: 0;
@@ -2954,11 +2954,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-footer-widget .info.error {
-  color: red;
+  color: #FFFFFF;
 }
 
 .single-footer-widget .click-btn {
-  background-color: #bd0f0f;
+  background-color: #FFFFFF;
   color: #FFFFFF;
   border-radius: 0;
   border-top-left-radius: 0px;
