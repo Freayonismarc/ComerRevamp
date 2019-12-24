@@ -1,5 +1,5 @@
 <?php
-$to = 'sales@comermetal.com.ph'; // replace this mail with yours
+$to = "sales@comermetal.com.ph"; // replace this mail with yours
 $firstname = $_POST["fname"];
 $email= $_POST["email"];
 $headers = 'MIME-Version: 1.0' . "\r\n";
@@ -15,7 +15,7 @@ $message ='<table style="width:100%">
  
 if (@mail($to, $email, $message, $headers))
 {
-    echo 'The message has been sent. Return to <a href="index.html">HOME</a>';
+    echo 'Your quotation request has been sent. Return to <a href="index.html">HOME</a>';
 }else{
     echo 'failed';
 }
