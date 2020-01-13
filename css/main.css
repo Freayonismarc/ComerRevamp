@@ -1890,6 +1890,7 @@ img.resize {
   font-size: 12px;
   padding: 10px;
   background-color: #bd0f0f;
+  color: #FFFFFF;
 }
 
 .header-top a {
@@ -2030,6 +2031,12 @@ img.resize {
 ::-webkit-scrollbar-thumb:hover {
   background: #bd0f0f; 
 }
+
+a[href^=tel] {
+  text-decoration:inherit;
+  color: inherit;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
