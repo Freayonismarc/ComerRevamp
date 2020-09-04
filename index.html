@@ -53,7 +53,6 @@
 					</div>
 					<nav id="nav-menu-container">
 					<ul class="nav-menu" id="myMenu">
-						<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"> <i class="fa fa-search"></i>
 						<li class="menu-active"><a href="index.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
 						<li class="menu-has-children"><a href="#">Products</a>
@@ -78,8 +77,14 @@
 						</ul>	          
 						</li>
 						<li><a href="contact.html">Contact</a></li>
-						<li><a href="Catalogue.pdf" download><img src="img\elements\DownloadMain.png"/>Catalogue</a></li>
-					</ul>
+						<li><a href="Catalogue.pdf"download><img src="img\elements\DownloadMain.png"/>Catalogue</a></li>
+						<!--<input type="search" id="strFound" onkeyup="findString()" placeholder="Search.." title="Type in a category"> <i class="fa fa-search"></i>-->
+						<!--<li><input type="search" id="txtSearch" method="get" placeholder="Search" action="index.html"> <i class="fa fa-search"></i></li>-->
+						<li><form id="frmSearch" class="search2" method="get" action="index.html">
+						<input class="search2" id="txtSearch" type="text" name="search_bar"/>
+						<input class="search1" type="submit" name="submission" value="Search"/>
+						<input class="search2" type="hidden" name="sitesearch" value="index.html" /></form></li>
+					</ul>	
 					</nav><!-- #nav-menu-container -->		    		
 				</div>
 			</div>
@@ -416,28 +421,30 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Comer
 			<script src="js/mail-script.js"></script>	
 			<script src="js/main.js"></script>
 			<script type="text/javascript">
+				document.getElementById('frmSearch').onsubmit = function() {
+					window.location = 'http://www.google.com/search?q=site:comermetal.com ' + document.getElementById('txtSearch').value;
+					return false;
+				}
+						</script><script type="text/javascript">
+				document.getElementById('frmSearch').onsubmit = function() {
+					window.location = 'http://www.google.com/search?q=site:comermetal.com ' + document.getElementById('txtSearch').value;
+					return false;
+				}
+			</script>
+			<script type="text/javascript">
 				var TRange=null;
 				
 
 				function findString () {
-				//if (parseInt(navigator.appVersion)<4) return;
 				var cStrFound = document.getElementById("strFound").value;
-				//var cStrFound = "bobo ni jace in variable"
-				// alert(cStrFound);
 
 				if (window.find) {
-				// alert("bobo si jace");
-				// CODE FOR BROWSERS THAT SUPPORT window.find
 
-				// strFound=self.find(str);
 				if (!cStrFound) {
-				// cStrFound=self.find(cStrFound,0,1);
 				while (self.find(cStrFound,0,1)) continue;
 				}
 				}
 				else if (navigator.appName.indexOf("Microsoft")!=-1) {
-
-				// EXPLORER-SPECIFIC CODE
 
 				if (TRange!=null) {
 				TRange.collapse(false);
@@ -458,7 +465,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Comer
 				return;
 				}
 			</script>
-			<script>
+			<!--<script>
 				function myFunction() {
 					var input, filter, ul, li, a, i;
 					input = document.getElementById("mySearch");
@@ -474,7 +481,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Comer
 					}
 					}
 				}
-			</script>
+			</script>-->
 		</body>
 	</html>
 

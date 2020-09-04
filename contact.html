@@ -55,7 +55,7 @@
 					<ul class="nav-menu">
 						<li class="menu-active"><a href="index.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
-						<li class="menu-has-children"><a href="#">Contact</a>
+						<li class="menu-has-children"><a href="#">Products</a>
 						<ul>
 							<li><a href="1_products-pipe clamps_couplerBS_ordinary.html">Pipe Clamps & Couplers</a></li>
 							<li><a href="2_products-scaffolding frames.html">Scaffolding Pipes</a></li>
@@ -77,7 +77,11 @@
 						</ul>	          
 						</li>
 						<li><a href="contact.html">Contact</a></li>
-						<li><input type="text" placeholder="Search"> <i class="fa fa-search"></i></li>
+						<li><form id="frmSearch" class="search2" method="get" action="index.html">
+							<input class="search2" id="txtSearch" type="text" name="search_bar"/>
+							<input class="search1" type="submit" name="submission" value="Search"/>
+							<input class="search2" type="hidden" name="sitesearch" value="index.html" /></form>
+						</li>
 					</ul>
 					</nav><!-- #nav-menu-container -->		    		
 				</div>
@@ -208,7 +212,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Comer
 			<script src="js/jquery.counterup.min.js"></script>
 			<script src="js/waypoints.min.js"></script>							
 			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
+			<script src="js/main.js"></script>
+			<script type="text/javascript">
+				document.getElementById('frmSearch').onsubmit = function() {
+					window.location = 'http://www.google.com/search?q=site:comermetal.com ' + document.getElementById('txtSearch').value;
+					return false;
+				}
+						</script><script type="text/javascript">
+				document.getElementById('frmSearch').onsubmit = function() {
+					window.location = 'http://www.google.com/search?q=site:comermetal.com ' + document.getElementById('txtSearch').value;
+					return false;
+				}
+			</script>
 		</body>
 	</html>
 
