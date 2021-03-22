@@ -1,22 +1,239 @@
-<?php
-$to = "sales@comermetal.com.ph"; // replace this mail with yours
-$firstname = $_POST["fname"];
-$email= $_POST["email"];
-$headers = 'MIME-Version: 1.0' . "\r\n";
-$headers .= "From: " . $email . "\r\n"; // Sender's E-mail
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
- 
-$message ='<table style="width:100%">
-    <tbody><tr>
-        <td>'.$firstname.'  '.$laststname.'</td>
-    </tr>
-    <tr><td>Email: '.$email.'</td></tr>
-</tbody></table>';
- 
-if (@mail($to, $email, $message, $headers))
-{
-    echo 'Your quotation request has been sent. Return to <a href="index.html">HOME</a>';
-}else{
-    echo 'failed';
-}
-?>
+<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/COMERicon.png">
+		<!--Social Media Thumbnail-->
+		<meta property="og:image"content="http://comermetal.com/img/comer_mainlogo.png?fbclid=IwAR0juFmCC2eYVxdAxDhqta4PVx5krsZt92DjxaDJNGUnmc-YfNmDyUUCmYk" />
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Who We Are</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">	
+			<link rel="stylesheet" href="css/hexagons.min.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body>	
+			<header id="header" id="home">
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 header-top-right no-padding">
+							<a href="mailto:comerformworks@gmail.com"><img src="img/elements/email.png"/> comerformworks@gmail.com</a>
+							<a href="mailto:sales@comermetal.com.ph"><img src="img/elements/email.png"/> sales@comermetal.com.ph</a>
+							<a href="tel:0282940392"><img src="img/elements/phonecall.png"/>(02) 8294-0392</a>
+							<a href="Catalogue.pdf" download><img src="img/elements/download.png"/>Download Catalogue</a>
+						</div>
+					</div>			  					
+				</div>
+			</div>
+			<div class="container main-menu">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo">
+					<a href="index.html"><img src="img/COMER2.png" alt="" title="" /></a>
+					</div>
+					<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class="menu-active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li class="menu-has-children"><a href="#">Products</a>
+						<ul>
+							<li><a href="1_products-pipe clamps_couplerBS_ordinary.html">Pipe Clamps & Couplers</a></li>
+							<li><a href="2_products-scaffolding frames.html">Scaffolding Pipes</a></li>
+							<li><a href="3_products-phenolic board.html">Phenolic Board</a></li>
+							<li><a href="4_products-scaffolding systems.html">Scaffolding System</a></li>
+							<li><a href="5_products-Ring Lock System.html">Ring Lock System</a></li>
+							<li><a href="6_products-plank, Catwalk, Ladder.html">Plank, Catwalk & Ladder</a></li>
+							<li><a href="7_products-Shoring Jack and Heavy Jack.html">Shoring Jack & Heavy Jack</a></li>
+							<li><a href="8_products-aluminum system.html">Aluminum System</a></li>
+							<li><a href="9_products-metal panel form.html">Metal Panel System</a></li>
+							<li><a href="10_products-phenolic panels.html">Phenolic Panel System</a></li>
+							<li><a href="11_products-form tie system.html">Form Tie System</a></li>
+							<li><a href="12_products-circular column road side panel.html">Circular Column & Road Side Panel</a></li>
+							<li><a href="13_products-climbing formworks.html">Climbing Formworks</a></li>
+							<li><a href="14_products-power climber gondola.html">Power Climber Gondola</a></li>
+							<li><a href="15_products-pvc products.html">PVC Products</a></li>
+							<li><a href="16_products-other accessories.html">Other Accessories</a></li>
+							<li><a href="17_products-special fabrications.html">*Special Fabrications*</a></li>
+						</ul>	          
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><form id="frmSearch" class="search2" method="get" action="index.html">
+							<input class="search2" id="txtSearch" type="text" name="search_bar"/>
+							<input class="search1" type="submit" name="submission" value="Search"/>
+							<input class="search2" type="hidden" name="sitesearch" value="index.html" /></form>
+						</li>
+					</ul>
+					</nav><!-- #nav-menu-container -->		    		
+				</div>
+			</div>
+			</header><!-- #header -->
+
+			<!-- start banner Area -->
+			<section class="banner-area2 relative" id="home">
+				<div class="overlay overlay-bg"></div>	
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								About Comer				
+							</h1>	
+							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="about.html"> About Us</a></p>
+						</div>	
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+
+			<!-- Start home-about Area -->
+			<section class="home-about-area section-gap aboutus-about" id="about">
+				<div class="container">
+					<div class="row justify-content-center align-items-center">
+						<div class="col-lg-8 col-md-12 home-about-left">
+							<h6>Brand new website to serve you better!</h6>
+							<h1>
+								<b>Reliability and Safety <br> is our Priority</b>
+							</h1>
+							<p class="pb-20">
+								COMER INDUSTRIAL DEVELOPMENT INCORPORATED is reputed to do all types of scaffolding from private homebuilders to construction towers and to infrastructure projects. Established in 1994, we pride ourselves on being able to provide nearly any type of formworks such as frames for access platforms, concrete support works, braces, pins, clamps, aluma beam, phenolic, pipes, and other various accessories so required.
+								<br><br>
+								With the vision of being the leading supplier of building materials, we commit maximum efforts to ensure that orders arrive at customer's premises without any delay, observing the just-in-time concept of delivery and providing the most superior products offered to our valued customers with advanced, sophisticated technology and quality services in steel scaffolding. Ever sensitive to changing market needs, COMER has extended our services to manufacture materials on custom-made basis. A wide variety of materials are catered for light to heavy construction purposes. We are also engage in demolition of large structure and high rise buildings
+								<br><br>
+								Comer's continuous growth strategy is keep ahead of industry trends in product and market knowledge despite of the flabbergasted, upside-down situations of the Philippine Economy. We continue to adopt and pursue the latest development through products and technology transfer from abroad. Our ardent entrepreneurial spirit has steered us to explore the potential of venturing into other related products with the purpose of providing a full range of services to our valued Customers.
+							</p>
+						</div>
+						<div class="col-lg-4 col-md-12 home-about-right relative">
+							<form class="form-wrap" method="post" action="mail.php">
+								<h4 class="text-white pb-20">Request a Quote</h4>
+								<input name="service" id="service-select" type="text" class="form-control" placeholder="Input Product Name">							
+								<input name="firstname" type="text" class="form-control" placeholder="Name">
+								<input name="phone" type="phone" class="form-control" placeholder="Phone Number">
+								<input name="email" type="email" class="form-control" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" placeholder="Email Address">
+								<textarea name="text" id="" cols="30" rows="5" placeholder="Message" class="form-control"></textarea>
+								<button class="primary-btn">Request Free Quote</button>
+							</form>
+							<?php
+							$to = "sales@comermetal.com.ph";
+							$firstname = $_POST["fname"];
+							$email= $_POST["email"];
+							$headers = 'MIME-Version: 1.0' . "\r\n";
+							$headers .= "From: " . $email . "\r\n"; // Sender's E-mail
+							$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+							$message ='<table style="width:100%">
+							<tbody><tr>
+							<td>'.$firstname.'  '.$laststname.'</td>
+							</tr>
+							<tr><td>Email: '.$email.'</td></tr>
+							</tbody></table>';
+
+							if (@mail($to, $email, $message, $headers))
+							{
+							echo '<span style="color:#AFA;">Your quotation request has been sent.';
+							}else{
+							echo 'failed';
+							}
+							?>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End home-about Area -->
+						
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6><img src="img/INTERESTED.png" alt="Interested?"></h6>
+								<p><a href="mailto:sales@comermetal.com.ph"><img src="img/CTA_quotation.png"></a></p>
+								<p><a href="contact.html"><img src="img/CTA_partnership.png"></a></p>
+								<a href="Catalogue.pdf" download="Catalogue"><img src="img/CTA_catalogueDL.png"></a>								
+							</div>
+						</div>
+						<div class="col-lg-5  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6><img src="img/elements/phonecall.png"/> Landline</h6>
+								<p><font color="#FFFFFF">(632) 8294-0392<br>
+									(632) 8293-1058<br>
+									(632) 8351-4586<br>
+									(632) 8921-9303</font></p>
+									<br>
+								<h6><img src="img/elements/mobile.png"/> Mobile No.</h6>
+								<p><font color="#FFFFFF">Globe: (+63) 917 581 8181 &nbsp;&nbsp;(Viber)<br>
+									Globe: (+63) 917 532 1236 (Viber)<br>
+									Sun: &nbsp;&nbsp;&nbsp;&nbsp;(+63) 922 813 3119<br>
+									Smart: (+63) 920 967 1300</font></p>
+							</div>
+						</div>						
+						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+							<div class="single-footer-widget">
+								<h6><img src="img/elements/fax.png"/> Fax</h6>
+								<p><font color="#FFFFFF">(632) 8294-2484</font></p>
+								<h6><img src="img/elements/email.png"/> Email Us @</h6>
+								<p><font color="#FFFFFF">comerformworks@gmail.com<br>
+									sales@comermetal.com.ph</font></p>
+								<h6><img src="img/elements/location.png"/>Address</h6><p><font color="#FFFFFF">#68 A. Bonifacio St., Tugatog
+									Malabon City, 1470</font></p>			
+							</div>
+						</div>						
+					</div>
+				</div>
+				<br><br>
+				<p class="footer-text" align="center" style="color:#FFFFFF">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Comer Industrial Development Inc. All Rights Reserved.<br> Website by: <b><a href="http://dreamdevcreatives.000webhostapp.com/index.html">Dream Dev Creatives</a></b>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</p>
+			</footer>	
+			<!-- End footer Area -->	
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>	
+			<script src="js/hexagons.min.js"></script>							
+			<script src="js/jquery.nice-select.min.js"></script>	
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/waypoints.min.js"></script>							
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>
+			<script type="text/javascript">
+				document.getElementById('frmSearch').onsubmit = function() {
+					window.location = 'http://www.google.com/search?q=site:comermetal.com ' + document.getElementById('txtSearch').value;
+					return false;
+				}
+						</script><script type="text/javascript">
+				document.getElementById('frmSearch').onsubmit = function() {
+					window.location = 'http://www.google.com/search?q=site:comermetal.com ' + document.getElementById('txtSearch').value;
+					return false;
+				}
+			</script>	
+		</body>
+	</html>
